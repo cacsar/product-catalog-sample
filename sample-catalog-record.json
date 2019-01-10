@@ -1,0 +1,51 @@
+[ {
+  "productId" : 80000001,
+  "productDescription" : "Kimchi-flavored white rice",
+  "regularPrice" : {
+    "display" : "$5.67",
+    "calculatorPrice" : 5.6700
+  },
+  "promotionalPrice" : null,
+  "unitOfMeasure" : "Each",
+  "productSize" : "     18oz",
+  "taxRate" : 0
+}, {
+  "productId" : 14963801,
+  "productDescription" : "Generic Soda 12-pack",
+  "regularPrice" : {
+    "display" : "2 For $13.00",
+    "calculatorPrice" : 6.5000
+  },
+  "promotionalPrice" : {
+    "display" : "$5.49",
+    "calculatorPrice" : 5.4900
+  },
+  "unitOfMeasure" : "Each",
+  "productSize" : "  12x12oz",
+  "taxRate" : 0.07775
+}, {
+  "productId" : 40123401,
+  "productDescription" : "Marlboro Cigarettes",
+  "regularPrice" : {
+    "display" : "$10.00",
+    "calculatorPrice" : 10.0000
+  },
+  "promotionalPrice" : {
+    "display" : "$5.49",
+    "calculatorPrice" : 5.4900
+  },
+  "unitOfMeasure" : "Each",
+  "productSize" : "",
+  "taxRate" : 0
+}, {
+  "productId" : 50133333,
+  "productDescription" : "Fuji Apples (Organic)",
+  "regularPrice" : {
+    "display" : "$3.49",
+    "calculatorPrice" : 3.4900
+  },
+  "promotionalPrice" : null,
+  "unitOfMeasure" : "Pound",
+  "productSize" : "       lb",
+  "taxRate" : 0
+} ]

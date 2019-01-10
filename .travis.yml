@@ -1,0 +1,15 @@
+language: java
+branches:
+  only:
+    - master
+script: mvn test -B && bash ./example-tests.sh
+deploy:
+  provider: releases
+  api_key:
+    secure: "pFOiGDN8V8WXruTGmP5R0qyxd+bC0Zrhj3utZED48eTEM06gK/hp+dT9jgZtx8jdb4g5Naj5ZFNXZ5a5Csdj69XAgKB+g+3zvbAvrV2bcTc3cJn5feQ70R3oKaBq8Pj6I3NnYnA7VWuUCSWBGpP+iogBwI80f6tAwOAIutdWrfZcs77TWfhWdiufxF9uRavdML4O6SVbzc0T5BqmjDZIA3UDYaTnz7FQO5r+s5LCQk0jo99ZVaKiyfvuEGCzmvU5cS2QAdV7nZnRoDKJvFWH1V6wYoBCvzcHRJGnI3jwu1gwu2KSxpEMdu543hLK2e/+/VQJKlxEQ1hLzc/zInXqax5jEKTW7I7pKWV74L8P7egRRqzMBmL1+4iN6igSUYxgNw7Mj6mNoBD8PZihwe8A+DrHaCJPlZDnlFHuQ9rrZZiDqk7T6WIpDEAml9UCzdlEakaoWhR25tpj5gvgW+8fok5eoX9/ktAm7RKKmUT3WE9IPJZ8yXD4iePiP9RdXJNjjKBfYKXvc8FyczjUMRDDrShnvWcB+MzN8QC5D6b29HYZkvqA7h2BtaPXgWoWV3iyG3dEQ0PlxQuT/IN19U3mIBPjXaH5E91KpVD+Mbn0/Yvgjo9dEBToewjW43YIBc5qDrIw3XlxBN2xW1fzbSbDe1tRupCPQh4o1a37IYitNQc="
+  file:
+    - product-catalog/target/product-catalog.jar
+    - product-catalog-example/target/product-catalog-example.jar
+  skip_cleanup: true
+  on:
+    tags: true

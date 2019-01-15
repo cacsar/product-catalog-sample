@@ -1,7 +1,4 @@
 language: java
-branches:
-  only:
-    - master
 script: mvn test -B && bash ./example-tests.sh
 deploy:
   provider: releases
